@@ -43,6 +43,7 @@ body {
 
     width: 100%;
     min-height: 100%;
+    max-width: 303px;
 
     background-color: rgb(36, 0, 66);
     border-radius: 25px;
