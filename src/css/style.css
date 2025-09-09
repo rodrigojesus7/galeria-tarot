@@ -97,3 +97,173 @@ body {
 .info-carta {
     line-height: 1.4;
 }
+
+
+.carta.enforcado:hover{
+    background-color: rgb(136, 136, 136) ;
+    color: black;
+    box-shadow: 1px 1px 50px rgb(61, 61, 61);
+
+    transform: rotate(180deg);
+    transition: ease-in-out 0.1s;
+
+
+}
+
+
+.carta.enforcado:hover>img {
+
+    box-shadow: -16px -13px 20px black;
+
+    transition: ease-in-out 0.3s;
+
+
+}
+
+
+
+
+.carta.diabo:hover{
+    background-color: black;
+    color: rgb(114, 12, 12);
+    box-shadow: 1px 1px 50px rgba(255, 0, 0, 0.884);
+
+
+}
+
+.carta.diabo:hover>img {
+
+    box-shadow: 16px 13px 20px rgb(63, 1, 1);
+
+    transition: ease-in-out 0.3s;
+
+
+}
+
+
+
+.carta.torre:hover{
+    background-color: rgb(99, 99, 99);
+    color: black;
+    box-shadow: 1px 1px 50px rgb(82, 53, 20);
+
+    transform: rotate(13deg);
+    transition: ease-in-out 0.7s;
+
+
+
+}
+
+
+.carta.torre:hover>img {
+
+    box-shadow: 16px 13px 20px black;
+
+    transition: ease-in-out 0.3s;
+
+
+}
+
+
+
+.carta.morte:hover{
+    background-color: black;
+    color: rgb(175, 172, 172);
+    box-shadow: 1px 1px 30px rgb(255, 255, 255);
+
+
+}
+
+
+.carta.morte:hover>img {
+
+    box-shadow: 16px 13px 20px rgba(255, 255, 255, 0.281);
+
+    transition: ease-in-out 0.3s;
+
+
+}
+
+
+
+
+.carta.estrela:hover{
+    background-color: rgb(64, 93, 189);
+    color: white;
+    box-shadow: 1px 1px 50px rgb(255, 251, 0);
+
+
+}
+
+
+.carta.estrela:hover>img {
+
+    box-shadow: 16px 13px 20px rgba(0, 0, 0, 0.76);
+
+    transition: ease-in-out 0.3s;
+
+
+}
+
+
+.carta.lua:hover{
+    background-color: rgb(15, 26, 63);
+    color: rgb(185, 184, 184);
+    box-shadow: 1px 1px 50px rgb(61, 54, 99);
+
+
+}
+
+
+.carta.lua:hover>img {
+
+    box-shadow: 16px 13px 20px black;
+
+    transition: ease-in-out 0.3s;
+
+
+}
+
+
+
+
+
+.carta.sol:hover{
+    background-color: rgb(255, 187, 0) ;
+    color: black;
+    box-shadow: 1px 1px 50px rgb(231, 112, 0);
+
+
+}
+
+
+.carta.sol:hover>img {
+
+    box-shadow: 16px 13px 20px black;
+
+    transition: ease-in-out 0.3s;
+
+
+}
+
+
+
+
+
+.carta.mundo:hover{
+    background-color: rgb(155, 247, 201);
+    color: black;
+    box-shadow: 1px 1px 50px rgb(176, 243, 234);
+
+
+}
+
+
+.carta.mundo:hover>img {
+
+    box-shadow: 16px 13px 20px black;
+
+    transition: ease-in-out 0.3s;
+
+
+}
