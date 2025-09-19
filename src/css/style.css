@@ -210,8 +210,69 @@ body {
     color: rgb(185, 184, 184);
     box-shadow: 1px 1px 50px rgb(61, 54, 99);
 
-
+    animation: ilusao 5s ease;
 }
+
+@keyframes ilusao {
+
+    0% {
+        filter: blur(0px);
+    }
+
+    25% {
+        filter: blur(2px);
+    }
+
+    50%{
+        filter: blur(8px);
+        opacity: 0.6;
+    }
+
+    75%{
+        filter: blur(20px);
+        opacity: 0.3;
+    }
+
+    80%{
+        filter: blur(15px);
+    }
+
+
+    85%{
+        filter: blur(12px);
+    }
+
+    90%{
+        filter: blur(6px);
+    }
+
+    91%{
+        filter: blur(2px);
+    }
+
+    92%{
+        filter: blur(0px);
+    }
+
+    93%{
+        filter: blur(0px);
+    }
+
+    94%{
+        filter: blur(0px);
+    }
+
+    95%{
+        filter: blur(0px);
+    }
+
+
+    100%{
+        filter: blur(0px);
+    }
+}
+
+
 
 
 .carta.lua:hover>img {
@@ -231,12 +292,12 @@ body {
     background-color: rgb(255, 187, 0);
     color: black;
     box-shadow: 1px 1px 50px rgb(231, 112, 0);
-
+    transition: 1s;
 
 }
 
 
-.carta.sol:hover>img {
+.carta.sol:hover img {
 
     box-shadow: 16px 13px 20px black;
 
@@ -244,6 +305,13 @@ body {
 
 
 }
+
+
+body:has(.carta.sol:hover) {
+    background-color: white;
+    transition: 5s;
+}
+
 
 
 
@@ -268,13 +336,13 @@ body {
 }
 
 
-.carta.eremita img{
+.carta.eremita img {
     transition: 3s;
 }
 
 
 
-.carta.eremita:hover img{
+.carta.eremita:hover img {
     transition: 4s;
     opacity: 0;
 }
@@ -282,7 +350,39 @@ body {
 
 
 
-.carta.roda:hover img{
-transform: rotate(20turn);
- transition: ease-in-out 10s;
+.carta.roda:hover img {
+    transform: rotate(20turn);
+    transition: ease-in-out 10s;
+}
+
+
+
+
+
+.carta.carro:hover img {
+    animation: arrancada 3s infinite;
+}
+
+@keyframes arrancada {
+
+    0% {
+        transform: translateZ(0px) scale(1);
+    }
+
+    25% {
+        transform: translateZ(15px) scale(1.15);
+    }
+
+    50% {
+        transform: translateZ(0px) scale(1.1);
+    }
+
+    75% {
+        transform: translateZ(15px) scale(1.15);
+    }
+
+    100% {
+        transform: translateZ(0px) scale(1);
+    }
+
 }
