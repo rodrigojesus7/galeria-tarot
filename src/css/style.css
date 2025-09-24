@@ -119,6 +119,12 @@ body {
 
 }
 
+.carta.enforcado:hover p,
+.carta.enforcado:hover h2 {
+    transform: rotate3d(0, 1, 0, 180deg);
+    transition: 0.3s step-start;
+}
+
 
 
 
@@ -159,8 +165,6 @@ body {
     box-shadow: 16px 13px 20px black;
 
     transition: ease-in-out 0.3s;
-
-
 }
 
 
@@ -184,6 +188,11 @@ body {
 }
 
 
+
+.carta.temperanca:hover{
+    background: linear-gradient(to right, #ee7c77, #77E9EE);
+    box-shadow: 1px 1px 50px rgba(255, 255, 255, 0.651);
+}
 
 
 .carta.estrela:hover {
@@ -223,51 +232,51 @@ body {
         filter: blur(2px);
     }
 
-    50%{
+    50% {
         filter: blur(8px);
         opacity: 0.6;
     }
 
-    75%{
+    75% {
         filter: blur(20px);
         opacity: 0.3;
     }
 
-    80%{
+    80% {
         filter: blur(15px);
     }
 
 
-    85%{
+    85% {
         filter: blur(12px);
     }
 
-    90%{
+    90% {
         filter: blur(6px);
     }
 
-    91%{
+    91% {
         filter: blur(2px);
     }
 
-    92%{
+    92% {
         filter: blur(0px);
     }
 
-    93%{
+    93% {
         filter: blur(0px);
     }
 
-    94%{
+    94% {
         filter: blur(0px);
     }
 
-    95%{
+    95% {
         filter: blur(0px);
     }
 
 
-    100%{
+    100% {
         filter: blur(0px);
     }
 }
