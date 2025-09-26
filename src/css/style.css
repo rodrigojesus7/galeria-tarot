@@ -100,12 +100,68 @@ body {
 
 
 
+.carta.louco:hover img {
+    animation: louquinho 1.85s ease-in-out infinite;
+    transform-origin: bottom center;
+}
+
+
+@keyframes louquinho {
+
+    0% {
+        transform: translate(0, 0);
+    }
+
+    10% {
+        transform: translate(-25px, -20px) rotate(5deg);
+    }
+
+    20% {
+        transform: translate(-25px, 0px) rotate(0deg);
+    }
+
+    30% {
+        transform: translate(-25px, -20px) rotate(-5deg);
+    }
+
+    40% {
+        transform: translate(0px, 0px);
+    }
+
+    50% {
+        transform: translate(25px, -20px) rotate(5deg);
+    }
+
+    60% {
+        transform: translate(25px, 0px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(25px, -20px) rotate(-5deg);
+    }
+
+    80% {
+        transform: translate(0px, 0px);
+    }
+
+    90% {
+        transform: translate(0, -30px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+
+}
+
+
+
+
 .carta.enforcado:hover {
     background-color: rgb(136, 136, 136);
     color: black;
     box-shadow: 1px 1px 50px rgb(61, 61, 61);
 
-    /* transform: rotate(180deg); */
     transition: ease-in-out 0.8s;
     transform: rotate3d(1, 0, 0, 200deg);
 
@@ -152,11 +208,10 @@ body {
     color: black;
     box-shadow: 1px 1px 50px rgb(82, 53, 20);
 
-    transform: rotate(13deg);
     transition: ease-in-out 0.7s;
 
-
-
+    animation: treme-torre 2.5s ease forwards;
+    transform-origin: bottom right;
 }
 
 
@@ -166,6 +221,42 @@ body {
 
     transition: ease-in-out 0.3s;
 }
+
+
+
+@keyframes treme-torre {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    15% {
+        transform: translateY(-5px) rotate(-2deg);
+    }
+
+    30% {
+        transform: translateY(7px) rotate(4deg);
+    }
+
+    45% {
+        transform: translateY(-12px) rotate(-5deg);
+    }
+
+    60% {
+        transform: translateY(20px) rotate(12deg);
+    }
+
+
+    100% {
+        transform: translateY(120px) rotate(90deg);
+    }
+
+}
+
+
+
+
+
+
 
 
 
@@ -189,7 +280,7 @@ body {
 
 
 
-.carta.temperanca:hover{
+.carta.temperanca:hover {
     background: linear-gradient(to right, #ee7c77, #77E9EE);
     box-shadow: 1px 1px 50px rgba(255, 255, 255, 0.651);
 }
