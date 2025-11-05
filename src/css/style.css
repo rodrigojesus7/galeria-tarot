@@ -189,6 +189,45 @@ body {
     color: rgb(114, 12, 12);
     box-shadow: 1px 1px 50px rgba(255, 0, 0, 0.884);
 
+    animation: fire 10s ease forwards;
+}
+
+@keyframes fire {
+    0% {
+        background-image: url(../images/fire-gif.gif);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: 500% 200%;
+    }
+
+
+    25% {
+        background-image: url(../images/fire-gif.gif);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: 400% 130%;
+    }
+
+    50% {
+        background-image: url(../images/fire-gif.gif);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: 300% 70%;
+    }
+
+    75% {
+        background-image: url(../images/fire-gif.gif);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: 200% 30%;
+    }
+
+    100% {
+        background-image: url(../images/fire-gif.gif);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: 100% 10%;
+    }
 
 }
 
@@ -287,22 +326,35 @@ body {
 
 
 .carta.estrela:hover {
-    background-color: rgb(64, 93, 189);
     color: white;
-    box-shadow: 1px 1px 50px rgb(255, 251, 0);
+    box-shadow: 1px 1px 40px rgba(235, 185, 3, 0.425);
+    animation: estrelas 5s linear forwards;
+
+}
+
+@keyframes estrelas {
+    0% {
+        background-image: url(../images/estrelas-gif.gif);
+    }
+
+    100% {
+        background-image: url(../images/estrelas-gif.gif);
+    }
 
 
 }
+
+
 
 
 .carta.estrela:hover>img {
 
-    box-shadow: 16px 13px 20px rgba(0, 0, 0, 0.76);
+    box-shadow: 1px 1px 40px rgba(235, 184, 3, 0.74);
 
-    transition: ease-in-out 0.3s;
-
+    content: url(../images/estrela2.png);
 
 }
+
 
 
 .carta.lua:hover {
